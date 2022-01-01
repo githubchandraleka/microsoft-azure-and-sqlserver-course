@@ -1,0 +1,16 @@
+title: Microsoft Azure and Sqlserver
+description: Create Azure free account and create a Database in SQL server
+template:
+  repo: microsoft-azure-and-sqlserver-template
+  name: microsoft-azure-and-sqlserver
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
